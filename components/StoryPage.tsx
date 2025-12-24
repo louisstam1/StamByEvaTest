@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Quote, Sparkles, UserCheck, Coffee, Heart } from 'lucide-react';
+import { ArrowLeft, Quote, Sparkles, UserCheck, Coffee, Heart, ShieldAlert } from 'lucide-react';
 
 interface StoryPageProps {
   onBack: () => void;
@@ -10,8 +10,11 @@ const StoryPage: React.FC<StoryPageProps> = ({ onBack }) => {
   // De authentieke foto van Eva
   const evaImage = "https://i.imgur.com/l4GcQmi.jpeg";
   
-  // Frank's placeholder image - a friendly, stylish man to fit the vibe
+  // Frank's image
   const frankImage = "https://i.imgur.com/JDg8gdD.jpeg";
+
+  // The Guardians image
+  const guardiansImage = "https://i.imgur.com/q6SkmHc.png";
 
   return (
     <div className="relative min-h-screen pt-32 pb-40 px-6 md:px-12 bg-[#1a0808] text-[#ffc2d1] overflow-hidden">
@@ -115,6 +118,47 @@ const StoryPage: React.FC<StoryPageProps> = ({ onBack }) => {
               When you walk into our boutique in Heide, you'll often be greeted by a friendly face alongside Eva. That's Frank.
             </p>
             <div className="space-y-6 opacity-60 text-lg leading-relaxed max-w-xl">
+              <p>
+                Frank is the silent force that makes everyone feel at home. Whether he's pouring you a fresh cup of coffee or sharing a genuine laugh, he ensures the atmosphere at Stam is always warm and welcoming.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Guardians Section - Humor/Security */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-40 pt-20 border-t border-[#ffc2d1]/10">
+          <div className="order-2 lg:order-1 space-y-8">
+            <div className="flex gap-4 mb-4">
+               <ShieldAlert className="text-[#ffc2d1]" size={28} />
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+              The Shop<br/><span className="text-white text-stroke">Guardians.</span>
+            </h2>
+            <p className="text-xl md:text-2xl opacity-80 leading-relaxed max-w-xl">
+              While Eva curates the style, these two manage the security detail. 
+            </p>
+            <div className="p-8 bg-white/5 border border-[#ffc2d1]/20 rounded-[2rem] relative overflow-hidden group">
+               <div className="absolute top-0 right-0 w-32 h-32 bg-[#ffc2d1]/10 blur-3xl rounded-full"></div>
+               <p className="text-lg leading-relaxed font-bold italic text-white mb-4">
+                 "They are the ultimate guardians of the shop... especially if you don't pay."
+               </p>
+               <p className="opacity-60 text-sm">
+                 Our security team is highly trained in surveillance and excessive cuteness. Please have your wallet ready to avoid any "aggressive" cuddling or silent judging.
+               </p>
+            </div>
+          </div>
+
+          <div className="order-1 lg:order-2 relative group">
+            <div className="aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5 relative">
+              <img 
+                src={guardiansImage} 
+                alt="Shop Guardians" 
+                className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1a0808]/50 via-transparent to-transparent"></div>
+            </div>
+            <div className="absolute -bottom-6 -right-6 px-8 py-4 bg-[#ffc2d1] text-[#1a0808] font-black tracking-[0.2em] uppercase text-[10px] rounded-full shadow-2xl transform rotate-3 group-hover:rotate-0 transition-transform">
+              Security Level: Extreme
             </div>
           </div>
         </div>
@@ -162,7 +206,7 @@ const StoryPage: React.FC<StoryPageProps> = ({ onBack }) => {
           <div className="space-y-8">
             <div className="rounded-[2.5rem] overflow-hidden border border-white/5 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=1000&auto=format&fit=crop" 
+                src="https://i.imgur.com/T03ITfD.jpeg" 
                 alt="Boutique Interior" 
                 className="w-full aspect-video object-cover"
               />

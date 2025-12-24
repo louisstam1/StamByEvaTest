@@ -4,8 +4,8 @@ import React from 'react';
 const Brands: React.FC = () => {
   const brandList = [
     "STIEGLITZ", "mbyM", "Co 'coutoure", "SAMSOE SAMSOE", 
-    "SELECTED FEMME", "MOSS COPENHAGEN", "AMERICAN VINTAGE", 
-    "ESSENTIEL ANTWERP", "STAM EXCLUSIVES"
+    "By shir", "MOSS COPENHAGEN", "AMERICAN VINTAGE", 
+     "STAM EXCLUSIVES"
   ];
 
   return (

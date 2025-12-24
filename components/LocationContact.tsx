@@ -31,7 +31,7 @@ const LocationContact: React.FC = () => {
             </div>
             <div className="flex items-start gap-4">
               <Mail className="mt-1 flex-shrink-0" />
-              <p className="opacity-70">hello@stambyeva.be</p>
+              <p className="opacity-70">lounoa@hotmail.com</p>
             </div>
           </div>
         </div>

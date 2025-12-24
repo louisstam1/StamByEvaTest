@@ -10,10 +10,8 @@ const brands = [
   { name: "SELECTED FEMME", img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop", category: "Essentials", size: "small" },
   { name: "MOSS COPENHAGEN", img: "https://images.unsplash.com/photo-1529139513477-323c66b6229b?q=80&w=800&auto=format&fit=crop", category: "Basics", size: "medium" },
   { name: "AMERICAN VINTAGE", img: "https://images.unsplash.com/photo-1475180098004-ca77a66827be?q=80&w=800&auto=format&fit=crop", category: "Knitwear", size: "large" },
-  { name: "ESSENTIEL ANTWERP", img: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop", category: "Bold Colors", size: "small" },
   { name: "STAM EXCLUSIVES", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop", category: "Special Picks", size: "medium" },
-  { name: "NUKUS", img: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=800&auto=format&fit=crop", category: "Daily Wear", size: "large" },
-  { name: "FABIENNE CHAPOT", img: "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?q=80&w=800&auto=format&fit=crop", category: "Prints", size: "small" }
+  { name: "By Shir", img: "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?q=80&w=800&auto=format&fit=crop", category: "Prints", size: "small" }
 ];
 
 interface BrandsPageProps {
